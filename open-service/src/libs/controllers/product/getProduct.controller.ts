@@ -1,8 +1,8 @@
 import { Request, Response, NextFunction } from "express";
-import { BadRequestError } from "@hpshops/common/build";
+import { BadRequestError } from "@ecom-microservie/common";
 import { DepenteniciesData } from "../../entities/interface";
 
-export = (dependencies: DepenteniciesData): any => {
+export default (dependencies: DepenteniciesData): any => {
   const {
     useCases: { getProduct_UseCase },
   } = dependencies;

@@ -3,7 +3,7 @@ import { schemas } from "../../db/mongo";
 
 const { Product } = schemas;
 
-export = {
+export default {
   createProduct: async (product: any) => {
     const mongooseObject = Product.build(product);
     return await mongooseObject.save();

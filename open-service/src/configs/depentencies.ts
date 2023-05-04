@@ -19,7 +19,7 @@ const repository = {
   productRepository,
 };
 
-export  {
+export default {
   useCases,
   repository,
 };

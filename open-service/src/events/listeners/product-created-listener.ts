@@ -1,5 +1,5 @@
 import { Message } from "node-nats-streaming";
-import { Subject, Listener, ProductCreatedEvent } from "@hpshops/common";
+import { Subject, Listener, ProductCreatedEvent } from "@ecom-microservie/common";
 import { queueGroupName } from "./queue-group-name";
 import depentencies from "../../configs/depentencies";
 import { createProduct_UseCase } from "../../libs/useCases";

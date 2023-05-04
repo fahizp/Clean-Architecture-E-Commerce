@@ -1,6 +1,6 @@
 import { Message } from "node-nats-streaming";
-import { Subject, Listener, ProductDeletedEvent } from "@hpshops/common";
-import { queueGroupName } from "./queue-group-name";
+import { Subject, Listener, ProductDeletedEvent } from "@ecom-microservie/common"
+import {queueGroupName} from './queue-group-name'
 import depentencies from "../../configs/depentencies";
 import { deleteProduct_UseCase } from "../../libs/useCases";
 import { natsWrapper } from "../../nats-wrapper";

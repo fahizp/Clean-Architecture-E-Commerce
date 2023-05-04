@@ -5,7 +5,7 @@ import {
   NotAuthorizedError,
   NotFoundError,
   errorHandler,
-} from "@hpshops/common/build";
+} from "@ecom-microservie/common/build";
 import cors from "cors";
 import depentencies from "./configs/depentencies";
 import { routes } from "./routes";

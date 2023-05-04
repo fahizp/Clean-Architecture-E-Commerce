@@ -1,10 +1,10 @@
 import express from "express";
-import { requireAuth, isAdmin, currentUser } from "@hpshops/common";
+import { requireAuth, isAdmin, currentUser } from "@ecom-microservie/common";
 
 import { productController } from "../libs/controllers";
 import { DepenteniciesData } from "../libs/entities/interface";
 
-export = (dependencies: DepenteniciesData) => {
+export default (dependencies: DepenteniciesData) => {
   const router = express.Router();
   const { getProductController, getAllProductsController } =
     productController(dependencies);
