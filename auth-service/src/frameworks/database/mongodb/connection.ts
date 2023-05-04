@@ -3,7 +3,7 @@ mongoose.set("strictQuery", true);
 
 const connectDB = async () => {
   try {
-    await mongoose.connect("mongodb+srv://fahiz:fahiz123@cluster0.movezpo.mongodb.net/auth");
+    await mongoose.connect(process.env.MONGO_URL! + "/ecom-product");
     console.log(`Database connected successfully`);
   } catch (error) {
     console.log(error);
