@@ -2,7 +2,7 @@ import mongoose  from "mongoose";
 
 const connectDB =async () => {
     try {
-        const conn = await mongoose.connect(process.env.MONGO_URL! + "/ecom-admin");
+        const conn = await mongoose.connect(process.env.MONGO_URL! + "/ecom-product");
 
         console.log(`Admin-db connected: ${conn.connection.host}`);   
     } catch (error) {
