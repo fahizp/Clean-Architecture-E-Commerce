@@ -1,6 +1,6 @@
-import jwt from "jsonwebtoken";
 import { NextFunction, Request, Response } from "express";
 import { BadRequestError } from "../error/bad-request-error";
+import jwt from 'jsonwebtoken';
 
 export interface UserPayload {
   id: string;

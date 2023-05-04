@@ -4,7 +4,7 @@ import { queueGroupName } from "./queue-group-name";
 import { createProfile_UseCase, updateUserProfile_UseCase } from "../../libs/useCases";
 import depentencies from "../../config/depentencies";
 
-export class ProfileCreatedListener extends Listener<ProfileUpdatedEvent> {
+export class ProfileUpdateListener extends Listener<ProfileUpdatedEvent> {
     subject: Subject.ProfileUpdated = Subject.ProfileUpdated;
     queueGroupName = queueGroupName;
     
