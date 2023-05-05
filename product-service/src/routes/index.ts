@@ -7,7 +7,7 @@ export const routes = (dependencies: any) => {
 
   routes.use("/admin", userRoutes(dependencies));
 
-  routes.use("/admin", productRoutes(dependencies));
+  routes.use("/product", productRoutes(dependencies));
 
   return routes;
 };

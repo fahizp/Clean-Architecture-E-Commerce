@@ -4,7 +4,8 @@ import { natsWrapper } from "./nats-wrapper";
 import { ProfileCreatedListener } from "./events/listeners/profile-created-event";
 import { ProfileUpdateListener } from "./events/listeners/profile-updated-event";
 import { connectDB } from "./config/db";
-
+import dotenv from "dotenv";
+dotenv.config();
 const start = async () => {
   if (!process.env.JWT_KEY) {
     throw new Error("JWT_KEY must be defined");

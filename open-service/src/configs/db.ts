@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 const connectDB = async () => {
   try {
     const conn = await mongoose.connect(
-      process.env.MONGO_URL! + "/shopIt-products"
+      process.env.MONGO_URL! + "/ecom-open"
     );
     console.log(`Product-db connected: ${conn.connection.host}`);
   } catch (error: any) {

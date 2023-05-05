@@ -1,7 +1,7 @@
 import express from "express";
 import { currentUser, requireAuth, isAdmin } from "@ecom-microservie/common";
 
-import { userController } from "libs/controllers";
+import {userController} from '../libs/controllers'
 
 export default (dependencies: any) => {
   const router = express.Router();

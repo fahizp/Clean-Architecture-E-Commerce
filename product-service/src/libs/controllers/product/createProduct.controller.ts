@@ -38,4 +38,5 @@ export default (dependencies: any): any => {
       throw new Error(error)
     }
   };
+  return createProduct
 };

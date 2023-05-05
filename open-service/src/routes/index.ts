@@ -5,6 +5,6 @@ import productRoutes from "./product.routes";
 export const routes = (dependencies: DepenteniciesData) => {
   const routes = express.Router();
 
-  routes.use("/product", productRoutes(dependencies));
+  routes.use("/open", productRoutes(dependencies));
   return routes;
 };
